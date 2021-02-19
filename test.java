@@ -6,8 +6,8 @@ public class Test {
 		// TODO Auto-generated method stub
 System.out.println("Test!!!!");
 
-//String s="WATER";
-String s="WELCOME";
+String s="WATER";
+//String s="WELCOME";
 int half=s.length()/2;
 String firstHalf=s.substring(0,half);
 String secondHalf=s.substring(half,s.length());
@@ -17,7 +17,7 @@ int j=0;
 String res="";
 
 for(int i=0;i<s.length();i++) {
-	for(int k=s.length();k>i;k--) {
+	for(int k=s.length()-1;k>i;k--) {
 		System.out.print(" ");
 	}
 	if(j<secondHalf.length()) {
