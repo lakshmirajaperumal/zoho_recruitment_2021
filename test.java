@@ -15,8 +15,11 @@ System.out.println(firstHalf);
 System.out.println(secondHalf);
 int j=0;
 String res="";
+
 for(int i=0;i<s.length();i++) {
-	
+	for(int k=s.length();k>i;k--) {
+		System.out.print(" ");
+	}
 	if(j<secondHalf.length()) {
 		res+=secondHalf.charAt(j);
 		System.out.println(res);
